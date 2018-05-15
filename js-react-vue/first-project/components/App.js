@@ -79,7 +79,6 @@ var App = React.createclass({
         // - Get current state of favorites
 
         var favorites = this.state.favorites;
-
         var index = -1;
 
         // - Loop through the favorites array.
@@ -95,7 +94,6 @@ var App = React.createclass({
         // - If it is found, remove it from the favorites array
 
         if(index !== -1){
-
             favorites.splice(index, 1);
 
             this.setState({
@@ -115,11 +113,9 @@ var App = React.createclass({
         var favorites = this.state.favorites;
 
         for(var i = 0; i < favorites.length; i++){
-
             if(favorites.address == address){
                 return true;
             }
-
         }
 
         return false;
@@ -157,6 +153,7 @@ var App = React.createclass({
     render(){
 
         return (
+            // - JSX construction of the page.
                 <div>
                 <h1>Your Google Maps Locations</h1>
 
