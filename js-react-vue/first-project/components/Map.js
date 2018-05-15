@@ -36,7 +36,7 @@ var Map = React.createClass({
             lat: this.props.lat,
             lng: this.props.lng
         });
-    }
+    },
 
     render(){
 
