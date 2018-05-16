@@ -1,0 +1,25 @@
+{
+  "name": "second-project",
+  "version": "1.0.0",
+  "description": "Build an App with Vue",
+  "main": "app.js",
+  "dependencies": {
+    "vue": "^2.5.16",
+    "vue-resource": "^1.5.0",
+    "bootstrap": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kadus90/AdvancedBeginnerChallenge.git"
+  },
+  "author": "Julian Phillips",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kadus90/AdvancedBeginnerChallenge/issues"
+  },
+  "homepage": "https://github.com/Kadus90/AdvancedBeginnerChallenge#readme"
+}
