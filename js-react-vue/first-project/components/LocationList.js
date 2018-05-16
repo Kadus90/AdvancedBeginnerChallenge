@@ -1,11 +1,12 @@
 // - This module takes the favorites array and creates an object for each item.
 
-var React = ('react');
+var React = require('react');
+var createReactClass = require('create-react-class');
 
 // - This pulls in the item module.
 var LocationItem = ('./LocationItem');
 
-var LocationList = React.createClass({
+var LocationList = createReactClass({
 
     render(){
 

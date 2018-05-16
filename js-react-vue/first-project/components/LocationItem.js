@@ -2,9 +2,10 @@
 // - The moment library will be used to determine the relative time since the location was added as a favorite.
 
 var React = require('react');
+var createReactClass = require('create-react-class');
 var Moment = require('moment');
 
-var LocationItem = React.createClass({
+var LocationItem = createReactClass({
 
     handleClick(){
         this.props.onClick(this.props.address);
@@ -21,7 +22,7 @@ var LocationItem = React.createClass({
         return(
                 <a className = {cn} onClick={this.handleClick}>
                 {this.props.address}
-                <span className = "createdAt">{ moment(this.props.timestamp).fromNow() }</span>
+                <span className = "createAt">{ moment(this.props.timestamp).fromNow() }</span>
                 <span className = "glyphicon glyphicon-menu-right"></span>
         )
     }

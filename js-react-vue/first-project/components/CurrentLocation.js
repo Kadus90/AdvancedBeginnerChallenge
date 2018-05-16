@@ -1,9 +1,10 @@
 // - This component presents the address of the currently displayed location with a clickable star icon.
 
 var React = require('react');
+var createReactClass = require('create-react-class');
 
 // - Create the logic for the CurrentLocation class.
-var CurrentLocation = React.createClass({
+var CurrentLocation = createReactClass({
     // - Give access to toggleFavorite
     toggleFavorite(){
         this.props.onFavoriteToggle(this.props.address);

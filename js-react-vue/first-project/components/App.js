@@ -1,6 +1,7 @@
 // First Web App with React based on Tutorialzine.com guide
 // - Requiring React
 var React = require('react');
+var createReactClass = require('create-react-class');
 
 // - Components
 var Search = require('./Search');
@@ -9,7 +10,7 @@ var CurrentLocation = require('./CurrentLocation');
 var LocationList = require('./LocationList');
 
 // - Application shell
-var App = React.createclass({
+var App = createReactClass({
 
     // - App level State control.
     getInitialState(){
@@ -113,7 +114,7 @@ var App = React.createclass({
         var favorites = this.state.favorites;
 
         for(var i = 0; i < favorites.length; i++){
-            if(favorites.address == address){
+            if(favorites[i].address == address){
                 return true;
             }
         }
@@ -131,7 +132,7 @@ var App = React.createclass({
 
         GMaps.geocode({
             address: address,
-            callback: function(result, status){
+            callback: function(results, status){
 
                 if(status !== 'OK') return;
 
@@ -155,7 +156,7 @@ var App = React.createclass({
         return (
             // - JSX construction of the page.
                 <div>
-                <h1>Your Google Maps Locations</h1>
+                <h1>Your Google Maps Location</h1>
 
                 <Search onSearch={this.searchForAddress} />
 

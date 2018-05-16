@@ -1,8 +1,10 @@
 // - This module controls the logic for searching.
 
 var React = require('react');
+var ReactDom = require('react-dom');
+var createReactClass = require('create-react-class');
 
-var Search = React.createClass({
+var Search = createReactClass({
 
     getInitialState(){
         return {value: ''};
@@ -22,7 +24,7 @@ var Search = React.createClass({
 
         // - Unfocus the text input field.
 
-        this.getDOMNode().querySelector('input').blur();
+        ReactDom.findDOMNode(this).querySelector('input').blur();
     },
 
     render(){

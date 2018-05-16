@@ -1,8 +1,10 @@
 // - This component wraps the GMaps plugin.
 
 var React = require('react');
+var createReactClass = require('create-react-class');
+var ReactDom = require('react-dom');
 
-var Map = React.createClass({
+var Map = createReactClass({
 
     componentDidMount(){
         // - Only componentDidMount is called when the component is first added to the page.
